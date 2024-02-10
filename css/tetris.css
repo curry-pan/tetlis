@@ -1,0 +1,84 @@
+body {
+  text-align: center;
+  font-family: 'DotGothic16', sans-serif;
+  font-weight: bold;
+}
+.field {
+  z-index: -1;
+  width: 45vh;
+  height: 90vh;
+  background-color: black;
+  margin: auto;
+  position: absolute;
+  right: calc(50vw - 22.5vh);
+}
+.field .block {
+  height: 4.5vh;
+  width: 4.5vh;
+  float: left;
+  border: solid 1px black;
+  box-sizing: border-box;
+}
+.field .block.empty {
+  background-color: gray;
+}
+.field .block.green {
+  background-color: green;
+}
+.field .block.white {
+  background-color: white;
+}
+.field .block.blue {
+  background-color: blue;
+}
+.field .block.pink {
+  background-color: pink;
+}
+.field .block.red {
+  background-color: red;
+}
+.field .block.orange {
+  background-color: orange;
+}
+.field .block.cyan {
+  background-color: cyan;
+}
+.game {
+  font-size: 8vh;
+  margin: 0 auto;
+  width: 45vh;
+  background-color: white;
+  position: relative;
+  top: 20vh;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+.score {
+  font-size: 6vh;
+  margin: 0 auto;
+  width: 45vh;
+  background-color: white;
+  position: relative;
+  top: 20vh;
+  border: 1px solid black;
+  margin-bottom: -11.3vh;
+  border-top: 0;
+}
+.btn {
+  margin: 0 auto;
+  padding: 0 .4em;
+  text-decoration: none;
+  background-color: white;
+  border: 2px solid black;
+  position: relative;
+  top: 50vh;
+  font-size: 8vh;
+}
+#logo{
+  color: white;
+  position: relative;
+  top: 20vh;
+  font-size: 10vh;
+  margin-bottom: -11.3vh;
+  z-index: 1;
+}
