@@ -98,10 +98,7 @@ function play() {
   var fallingBlockPos;
   selectNext();
 
-  var timer = setTimeout(function(){
-    fall();
-  },time);
-  
+  var timer;
   function fall(){
     clearTimeout(timer);
     timer = setTimeout(function(){
@@ -115,6 +112,7 @@ function play() {
       drawBlock();
   }
   function qfall(){
+    clearTimeout(timer);
     while(getFall()){
         fallingBlockPos.y += 1;
         score += 1;
@@ -344,7 +342,7 @@ function play() {
             drawBlock();
         }
         break;
-    case 77: //m left
+    case 66: //b left
         if(getRotate()) {
             var oldfallingBlock = fallingBlock;
             fallingBlock = [];
